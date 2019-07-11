@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/name_tv"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="NAME"/>
+        <EditText
+                android:id="@+id/name_et"
+                android:layout_weight="3"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Input name .."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="16dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/id_tv"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ID"/>
+        <EditText
+                android:id="@+id/id_et"
+                android:layout_weight="3"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Input id .."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="16dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/pwd_tv"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PWD"/>
+        <EditText
+                android:id="@+id/pwd_et"
+                android:layout_weight="3"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Input password .."/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/done_btn"
+            android:text="DONE"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="16dp"
+            android:id="@+id/board_linear"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/name_board_tv"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"/>
+        <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/id_board_tv"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"/>
+        <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/pwd_board_tv"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
